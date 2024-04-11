@@ -509,15 +509,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "iriomote_web"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "iriomote_core",
- "wasm-bindgen",
-]
-
-[[package]]
 name = "itertools"
 version = "0.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
