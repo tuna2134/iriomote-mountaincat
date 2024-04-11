@@ -8,7 +8,7 @@ async fn main() -> anyhow::Result<()> {
         filename
     } else {
         println!("ファイル名を指定してください。");
-        return Ok(())
+        return Ok(());
     };
     let iriomote = IriomoteCore::new()?;
     if let Some(result) = iriomote.predict(tokio::fs::read(filename).await?).await? {

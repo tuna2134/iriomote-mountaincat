@@ -1,0 +1,14 @@
+[package]
+name = "iriomote_py"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "iriomote_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+iriomote_core = { version = "0.1.0", path = "../iriomote_core" }
+pyo3 = "0.20.0"
+pyo3-asyncio = { version = "0.20.0", features = ["tokio-runtime"] }

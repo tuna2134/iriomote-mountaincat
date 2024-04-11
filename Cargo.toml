@@ -1,5 +1,5 @@
 [workspace]
-members = [ "cli", "iriomote_core"]
+members = [ "cli", "iriomote_core", "iriomote_py"]
 
 [workspace.dependencies]
 anyhow = "1.0.82"
