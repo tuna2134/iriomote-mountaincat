@@ -1,5 +1,5 @@
-models
-!models/.gitkeep
+iriomote_core/src/models/*
+!iriomote_core/src/models/.gitkeep
 target
 venv
 wheels
