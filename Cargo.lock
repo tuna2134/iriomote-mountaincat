@@ -201,15 +201,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "cmake"
-version = "0.1.50"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a31c789563b815f77f4250caee12365734369f942439b7defd71e18a48197130"
-dependencies = [
- "cc",
-]
-
-[[package]]
 name = "color_quant"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -350,7 +341,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "46303f565772937ffe1d394a4fac6f411c6013172fadde9dcdb1e147a086940e"
 dependencies = [
  "crc32fast",
- "libz-ng-sys",
  "miniz_oxide",
 ]
 
@@ -519,6 +509,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "iriomote_web"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "iriomote_core",
+ "wasm-bindgen",
+]
+
+[[package]]
 name = "itertools"
 version = "0.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -563,16 +562,6 @@ dependencies = [
  "arbitrary",
  "cc",
  "once_cell",
-]
-
-[[package]]
-name = "libz-ng-sys"
-version = "1.1.15"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c6409efc61b12687963e602df8ecf70e8ddacf95bc6576bcf16e3ac6328083c5"
-dependencies = [
- "cmake",
- "libc",
 ]
 
 [[package]]
@@ -783,8 +772,7 @@ checksum = "3fdb12b2476b595f9358c5161aa467c2438859caa136dec86c26fdd2efe17b92"
 [[package]]
 name = "ort"
 version = "2.0.0-rc.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "411eb2f583ef2556b5e60c2743711d3cdd60a2ea3566caeadeb8920699d7c3bf"
+source = "git+https://github.com/pykeio/ort.git#a9ab2a566187fe835345b31e69d99bee93300dd6"
 dependencies = [
  "half",
  "ndarray",
@@ -796,8 +784,7 @@ dependencies = [
 [[package]]
 name = "ort-sys"
 version = "2.0.0-rc.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ccad267e2a67a8dbf2ceb9497d3a7e8d8f71dc58e65126dd15bf44f6d4612a2"
+source = "git+https://github.com/pykeio/ort.git#a9ab2a566187fe835345b31e69d99bee93300dd6"
 dependencies = [
  "flate2",
  "sha2",
