@@ -1,4 +1,4 @@
-# iriomot-mountaincat
+# iriomote-mountaincat
 このプロジェクトはAIを使ってイリオモテヤマネコかじゃないかを判断するAIの周辺回りです。
 
 ## 利用方法
