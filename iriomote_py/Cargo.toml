@@ -10,5 +10,5 @@ crate-type = ["cdylib"]
 
 [dependencies]
 iriomote_core = { version = "0.1.0", path = "../iriomote_core" }
-pyo3 = "0.20.0"
+pyo3 = "0.22.0"
 pyo3-asyncio = { version = "0.20.0", features = ["tokio-runtime"] }
